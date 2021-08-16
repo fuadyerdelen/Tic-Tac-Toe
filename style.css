@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.players {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.player-name {
+    display: flex;
+    flex-direction: row;
+}
+
+.players input {
+    width: 210px;
+    height: 40px;
+    font-size: 2rem;
+}
+
+.players span {
+    font-size: 1.5rem;
+}
+
+
+
+
+#game_board {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 30px;
+}
+
+
+.cell {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+
+    cursor: pointer;
+
+    /* cursor:not-allowed; */
+}
+
+.cell:hover {
+    background-color: cadetblue;
+}
+
+.win-message {
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+    margin: auto;
+    background-color: cornflowerblue;
+}
+
+.wining-text {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#restrat_btn {
+    height: 60px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.cell-1,
+.cell-2,
+.cell-3 {
+    border-top: none;
+}
+
+.cell-4,
+.cell-1,
+.cell-7 {
+    border-left: none;
+}
+
+.cell-6,
+.cell-3,
+.cell-9 {
+    border-right: none;
+}
+
+.cell-7,
+.cell-8,
+.cell-9 {
+    border-bottom: none;
+}

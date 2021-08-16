@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+
+    <div class="players">
+        <div class="player-x">
+            <label for="player_x_name"> X - PLAYER NAME: <span id="x_player"></span> <br>
+                <div class="player-name">
+                    <input id="player_x_name" type="text"> <button onclick="enterName()">enter</button></div>
+            </label>
+        </div>
+        <div class="win-message">
+            <div class="wining-text">
+                <p id="winner"></p>
+            </div>
+            <button id="restrat_btn">Restrat</button>
+        </div>
+        <div class="player-o">
+            <label for="player_o_name"> O - PLAYER NAME: <span id="o_player"></span> <br>
+                <div class="player-name">
+                    <input id="player_o_name" type="text"> <button onclick="enterName()">enter</button></div>
+            </label>
+        </div>
+    </div>
+
+
+
+    <div id="game_board">
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
